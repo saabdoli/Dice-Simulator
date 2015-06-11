@@ -3,8 +3,10 @@ from Tkinter import *
 root = Tk()
 root.title = 'Die Simulator'
 
+val1, val2 = IntVar()
+
 button_frame = Frame(root)
-roll_button = Button(button_frame, text='Roll Again')
+roll_button = Button(button_frame, text='Roll Again', command=roll_dice)
 quit_button = Button(button_frame, text='Quit')
 roll_button.pack(side=LEFT)
 quit_button.pack(side=LEFT)
@@ -21,6 +23,4 @@ die_frame.pack()
 button_frame.pack()
 root.mainloop()
 
-if __name__ == '__main__':
-    main()
 
